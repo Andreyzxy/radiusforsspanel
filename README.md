@@ -89,7 +89,7 @@ $System_Config['radius_secret']=''; // 这个重要 必须设
 
 8.在网站中添加节点  
 首先新增 VPN/Radius基础，然后再新增 Anyconnect。也就是每个节点添加两个  
-参考 
+参考 https://github.com/q158073378252010/glzjin_ss-panel-v3-mod/wiki/%E9%AD%94%E6%94%B9%E7%89%88%E6%B7%BB%E5%8A%A0%E8%8A%82%E7%82%B9%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%E8%AF%B4%E6%98%8E  
 
 # radius与anyconnect对接(客户端)  
 
