@@ -10,7 +10,7 @@
 
 * 服务端(centos7):  
 
-## 先安装perl  
+** 先安装perl  
 ```  
 yum install perl  perl-CPAN -y
 # 然后需要安装perl的DBI组件
@@ -20,7 +20,7 @@ cpan>install DBI
 cpan>quit
 ```  
 ① 
-## 再安装其它组件  
+** 再安装其它组件  
 ```
 yum install log4cxx tncfhh tncfhh-libs tncfhh-utils xerces-cc -y
 yum install unixODBC -y
