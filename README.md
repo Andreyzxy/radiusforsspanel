@@ -99,8 +99,8 @@ $System_Config['radius_secret']=''; // 这个重要 必须设
 * 设置freeradius客户端文件
 ```  
 修改 etc/radcli/radiusclient.conf
-第37行改为 authserver 1.1.1.1
-第42行改为 acctserver 1.1.1.1
+改为 authserver 1.1.1.1
+改为 acctserver 1.1.1.1
 保存这份文件
 打开freeradius客户端的服务器设置
 修改 /etc/radcli/servers
