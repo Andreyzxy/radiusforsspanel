@@ -12,7 +12,7 @@
 
 * 先安装perl  
 ```  
-yum install perl  perl-CPAN -y
+yum install perl perl-DBI perl-CPAN -y
 # 然后需要安装perl的DBI组件
 perl -MCPAN -e shell
 cpan>install DBI
