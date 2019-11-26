@@ -44,7 +44,7 @@ yum install radcli -y
 1.创建 radius 数据库和用户  
 2.选择 radius 数据库 导入 https://github.com/stardock/Radius-install/raw/master/all.sql  
 3.继续设置 radius, 编辑 /etc/raddb/sql.conf, 配置 login(用户名), password(密码), radius_db(数据库名)等字段, 找到 readclients 一行，设为 yes 并去掉注释符号#  
-4.配置clients.conf设置允许连接的客户端
+4.配置clients.conf设置允许连接的客户端  
 5.覆盖文件  
 ```  
 wget https://github.com/stardock/Radius-install/raw/master/radiusd.conf -O /etc/raddb/radiusd.conf
