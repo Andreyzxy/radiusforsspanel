@@ -43,9 +43,8 @@ yum install radcli -y
 
 1.创建 radius 数据库和用户  
 2.选择 radius 数据库 导入 https://github.com/stardock/Radius-install/raw/master/all.sql  
-3.继续设置 radius, 编辑 /etc/raddb/sql.conf, 配置 login(用户名), password(密码), radius_db(数据库名)等字段, 找到 readclients 一行，设为 yes 并去掉注释符号#  
-4.配置clients.conf设置允许连接的客户端  
-5.覆盖文件  
+3.继续设置 radius, 编辑 /etc/raddb/sql.conf, 配置 login(用户名), password(密码), radius_db(数据库名)等字段, 找到 readclients 一行，设为 yes 并去掉注释符号#    
+4.覆盖文件  
 ```  
 wget https://github.com/stardock/Radius-install/raw/master/radiusd.conf -O /etc/raddb/radiusd.conf
 wget https://github.com/stardock/Radius-install/raw/master/default -O /etc/raddb/sites-enabled/default
@@ -53,7 +52,7 @@ wget https://github.com/stardock/Radius-install/raw/master/dialup.conf -O /etc/r
 wget https://github.com/stardock/Radius-install/raw/master/dictionary -O /etc/raddb/dictionary
 wget https://github.com/stardock/Radius-install/raw/master/counter.conf -O /etc/raddb/sql/mysql/counter.conf
 ```  
-6.Radius 配置完成  
+5.Radius 配置完成  
 ```
 service radiusd start
 chkconfig radiusd on
@@ -61,7 +60,7 @@ chkconfig radiusd on
 ③  
 注意：配置freeradius可能导致mysql无法启动，此时只需要删除 `/etc/mysql/my.cnf` 即可。  
 
-7.配置 sspanel
+6.配置 sspanel
 ```
 cd /home/wwwroot/你的域名
 php composer.phar install
@@ -81,12 +80,16 @@ $System_Config['radius_db_password']='';
 $System_Config['radius_secret']=''; // 这个重要 必须设
 ```
 
-8.Crontab添加下面这三条
+7.Crontab添加下面这三条
 ```  
 */1 * * * * php /www/wwwroot/[你的网站]/xcat synclogin
 */1 * * * * php /www/wwwroot/[你的网站]/xcat syncvpn
 */1 * * * * php -n /www/wwwroot/[你的网站]/xcat syncnas
 ```  
+
+8.在网站中添加节点  
+首先新增 VPN/Radius基础，然后再新增 Anyconnect。也就是每个节点添加两个  
+参考 
 
 # radius与anyconnect对接(客户端)  
 
