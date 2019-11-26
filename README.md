@@ -99,12 +99,12 @@ $System_Config['radius_secret']=''; // 这个重要 必须设
 * 设置freeradius客户端文件
 ```  
 修改 etc/radcli/radiusclient.conf
-改为 authserver 1.1.1.1
-改为 acctserver 1.1.1.1
+改为 authserver 服务端IP
+改为 acctserver 服务端IP
 保存这份文件
 打开freeradius客户端的服务器设置
 修改 /etc/radcli/servers
-添加1.1.1.1 testing123至最后一行，保存这份文件。
+添加 `服务端IP testing123` 至最后一行，保存这份文件。
 保存这份文件。自此，我们已经设置好了freeradius客户端需要做的设置。我们接下来让anyconnect使用freeradius作为验证模块
 ```  
 
