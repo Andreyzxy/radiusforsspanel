@@ -53,6 +53,11 @@ wget https://github.com/stardock/Radius-install/raw/master/dictionary -O /etc/ra
 wget https://github.com/stardock/Radius-install/raw/master/counter.conf -O /etc/raddb/sql/mysql/counter.conf
 ```  
 5.Radius 配置完成  
+测试启动  
+```  
+radiusd -X
+```  
+
 ```
 service radiusd start
 chkconfig radiusd on
