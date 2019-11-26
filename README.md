@@ -19,9 +19,8 @@ cpan>install DBI
 //安装完成后退出cpan
 cpan>quit
 ```  
-## 再安装其它组件  
 ① 
-
+## 再安装其它组件  
 ```
 yum install log4cxx tncfhh tncfhh-libs tncfhh-utils xerces-cc -y
 yum install unixODBC -y
