@@ -58,7 +58,7 @@ wget https://github.com/stardock/Radius-install/raw/master/counter.conf -O /etc/
 service radiusd start
 chkconfig radiusd on
 ```  
-③
+③  
 注意：配置freeradius可能导致mysql无法启动，此时只需要删除 `/etc/mysql/my.cnf` 即可。  
 
 7.配置 sspanel
