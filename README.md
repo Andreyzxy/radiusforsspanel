@@ -52,12 +52,12 @@ wget https://github.com/stardock/Radius-install/raw/master/dialup.conf -O /etc/r
 wget https://github.com/stardock/Radius-install/raw/master/dictionary -O /etc/raddb/dictionary
 wget https://github.com/stardock/Radius-install/raw/master/counter.conf -O /etc/raddb/sql/mysql/counter.conf
 ```  
-5.Radius 配置完成  
+5.   
 测试启动  
 ```  
 radiusd -X
 ```  
-
+配置完成  
 ```
 service radiusd start
 chkconfig radiusd on
