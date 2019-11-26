@@ -129,7 +129,7 @@ Q&A
 ⑤Radius启动失败提示libssl安全风险请参考 https://serverfault.com/questions/803689/freeradius-cant-get-new-openssl-version  
 `allow_vulnerable_openssl = yes`  
 
-Thanks for refer:
+Thanks for refering:  
 https://zorz.cc/post/install-sspanel-v3-web-control-log.html  
 https://zorz.cc/post/use-ocserv-with-sspanel-v3-mod-on-debian8.html  
 https://www.opscaff.com/2017/03/01/ocserv-radius-%E8%AE%A4%E8%AF%81%E6%90%AD%E5%BB%BA-freeradius-mysql/  
