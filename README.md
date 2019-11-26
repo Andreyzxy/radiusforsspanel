@@ -69,9 +69,6 @@ chkconfig radiusd on
 6.配置 sspanel
 ```
 cd /www/wwwroot/你的域名
-php composer.phar install
-cp config/.config.php.example config/.config.php
-# 编辑以下文件 建议使用 FTP 下载到本地修改
 vi config/.config.php
 ```
 
