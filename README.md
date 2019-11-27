@@ -73,14 +73,14 @@ vi config/.config.php
 ```
 
 ```
-$System_Config['enable_radius']='false'; // 配置了 radius 的话就开
+$System_Config['enable_radius']='true'; // 配置了 radius 的话就开
 #Radius数据库设置
-$System_Config['radius_db_host']='';		// 跟 上面 database 数据库配置差不多 换成radius即可
-$System_Config['radius_db_database']='';
+$System_Config['radius_db_host']='localhost';
+$System_Config['radius_db_database']='';   // 跟 上面 database 数据库配置差不多 换成radius即可
 $System_Config['radius_db_user']='';
 $System_Config['radius_db_password']='';
 #Radius连接密钥
-$System_Config['radius_secret']=''; // 这个重要 必须设
+$System_Config['radius_secret']='testing123'; // 这个重要 必须设
 ```
 
 7.Crontab添加下面这三条
